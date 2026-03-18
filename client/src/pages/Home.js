@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaRecycle, FaGift, FaLeaf } from "react-icons/fa";
+
 
 function Home() {
   return (
