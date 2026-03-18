@@ -15,7 +15,7 @@ function Dashboard() {
 
       // Fetch dashboard stats
       const response = await axios.get(
-        `http://localhost:5000/api/dashboard?email=${user.email}`
+        `https://mediconnect-87dw.onrender.com/api/dashboard?email=${user.email}`
       );
 
       setTotalMedicines(response.data.totalMedicines);
@@ -23,7 +23,7 @@ function Dashboard() {
 
       // Fetch medicine history
       const medicineResponse = await axios.get(
-        `http://localhost:5000/api/medicine/user?email=${user.email}`
+        `https://mediconnect-87dw.onrender.com/api/medicine/user?email=${user.email}`
       );
 
       setMedicines(medicineResponse.data);
@@ -100,7 +100,7 @@ function Dashboard() {
                 <td>
                   {med.image ? (
                     <img
-                      src={`http://localhost:5000/uploads/${med.image}`}
+                      src={`https://mediconnect-87dw.onrender.com/uploads/${med.image}`}
                       alt="medicine"
                       style={{
                         width: "70px",

@@ -31,7 +31,7 @@ function Analytics(){
    try{
 
     const response = await axios.get(
-      "http://localhost:5000/api/medicine/analytics"
+      "https://mediconnect-87dw.onrender.com/api/medicine/analytics"
     );
 
     setAnalytics(response.data);

@@ -14,7 +14,7 @@ function TrackMedicines() {
       const user = JSON.parse(localStorage.getItem("user"));
 
       const response = await axios.get(
-        `http://localhost:5000/api/medicine/user?email=${user.email}`
+        `https://mediconnect-87dw.onrender.com/api/medicine/user?email=${user.email}`
       );
 
       setMedicines(response.data);

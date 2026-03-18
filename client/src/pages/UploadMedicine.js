@@ -21,7 +21,7 @@ function UploadMedicine() {
       formData.append("image", image);
 
       const response = await axios.post(
-        "http://localhost:5000/api/medicine/upload",
+        "https://mediconnect-87dw.onrender.com/api/medicine/upload",
         formData,
         {
           headers: {

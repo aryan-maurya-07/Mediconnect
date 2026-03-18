@@ -9,7 +9,7 @@ function ManagerDashboard(){
  const fetchMedicines = async()=>{
 
    const response = await axios.get(
-     "http://localhost:5000/api/medicine/all"
+     "https://mediconnect-87dw.onrender.com/api/medicine/all"
    );
 
    setMedicines(response.data);
@@ -19,7 +19,7 @@ function ManagerDashboard(){
  const fetchAnalytics = async()=>{
 
    const response = await axios.get(
-     "http://localhost:5000/api/medicine/analytics"
+     "https://mediconnect-87dw.onrender.com/api/medicine/analytics"
    );
 
    setAnalytics(response.data);
@@ -35,7 +35,7 @@ function ManagerDashboard(){
  const updateStatus = async(id)=>{
 
    await axios.put(
-     `http://localhost:5000/api/medicine/update-status/${id}`
+     `https://mediconnect-87dw.onrender.com/api/medicine/update-status/${id}`
    );
 
    fetchMedicines();

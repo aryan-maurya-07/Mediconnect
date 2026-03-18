@@ -13,9 +13,9 @@ app.use("/api/medicine", medicineRoutes);
 app.use("/api/dashboard", dashboardRoutes);
 app.use("/uploads", express.static("uploads"));
 
-mongoose.connect("mongodb://127.0.0.1:27017/mediconnect")
-.then(()=>console.log("MongoDB Connected"))
-.catch(err=>console.log(err));
+mongoose.connect("mongodb+srv://aryan:aryan@cluster0.ah9g8rp.mongodb.net/mediconnect")
+.then(() => console.log("MongoDB Connected"))
+.catch(err => console.log(err));
 
 app.get("/", (req,res)=>{
     res.send("Mediconnect Backend Running");

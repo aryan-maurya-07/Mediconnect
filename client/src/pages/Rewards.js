@@ -11,7 +11,7 @@ function Rewards() {
       if (!user) return;
 
       const response = await axios.get(
-        `http://localhost:5000/api/dashboard?email=${user.email}`
+        `https://mediconnect-87dw.onrender.com/api/dashboard?email=${user.email}`
       );
 
       setPoints(response.data.rewardPoints);
@@ -36,7 +36,7 @@ function Rewards() {
     try {
 
       const response = await axios.post(
-        "http://localhost:5000/api/auth/redeem",
+        "https://mediconnect-87dw.onrender.com/api/auth/redeem",
         {
           email: user.email,
           cost: cost
