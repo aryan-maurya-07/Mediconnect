@@ -30,15 +30,11 @@ exports.signup = async (req, res) => {
     });
 
   } catch (error) {
-
-    res.status(500).json({
-      error: error.message
-    });
-
-  }
+  console.log("SIGNUP ERROR:", error);   // 👈 ADD THIS
+  res.status(500).json({ error: error.message });
+}
 
 };
-
 
 
 // LOGIN
